@@ -1,5 +1,6 @@
 package org.usfirst.frc.team558.robot.gameState;
 
+import org.usfirst.frc.team558.robot.autocommands.CrossTheLine;
 import org.usfirst.frc.team558.robot.autocommands.ExchangeLeft;
 import org.usfirst.frc.team558.robot.autocommands.doubleLeftScale;
 import org.usfirst.frc.team558.robot.autocommands.doubleScaleSwitch;
@@ -33,7 +34,7 @@ public class doubleRightScaleSwitchAuto extends CommandGroup {
     		}
     		else {
     			
-    			addSequential(new rightExchange());
+    			addSequential(new CrossTheLine());
     			
     		}
     }

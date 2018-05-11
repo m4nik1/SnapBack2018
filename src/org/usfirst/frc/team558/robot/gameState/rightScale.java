@@ -25,7 +25,7 @@ public class rightScale extends CommandGroup {
    		}
    		else {
     			
-   			addSequential(new rightExchange());
+   			addSequential(new CrossTheLine());
     			
    		}
     }

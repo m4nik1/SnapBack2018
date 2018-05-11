@@ -30,7 +30,7 @@ public class rightSwitch extends CommandGroup {
 	    	}
 	   		else {
 	    			
-	    			addSequential(new rightExchange());
+	    			addSequential(new CrossTheLine());
 	    			
 	    	}
     }

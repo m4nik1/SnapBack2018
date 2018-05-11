@@ -1,6 +1,7 @@
 package org.usfirst.frc.team558.robot.gameState;
 
 import org.usfirst.frc.team558.robot.autocommands.ButtShotLeft;
+import org.usfirst.frc.team558.robot.autocommands.CrossTheLine;
 import org.usfirst.frc.team558.robot.autocommands.ExchangeLeft;
 import org.usfirst.frc.team558.robot.autocommands.scaleLeft;
 import org.usfirst.frc.team558.robot.autocommands.switchLeft;

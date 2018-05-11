@@ -1,6 +1,7 @@
 package org.usfirst.frc.team558.robot.gameState;
 
 import org.usfirst.frc.team558.robot.autocommands.ButtShotRight;
+import org.usfirst.frc.team558.robot.autocommands.CrossTheLine;
 import org.usfirst.frc.team558.robot.autocommands.ExchangeLeft;
 import org.usfirst.frc.team558.robot.autocommands.rightExchange;
 import org.usfirst.frc.team558.robot.autocommands.scaleRight;
@@ -28,7 +29,7 @@ public class buttShotRightAuto extends CommandGroup {
    		}
    		else {
     			
-   			addSequential(new rightExchange());
+   			addSequential(new CrossTheLine());
     			
    		}
     }

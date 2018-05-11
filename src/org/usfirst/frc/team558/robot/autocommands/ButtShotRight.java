@@ -20,7 +20,7 @@ public class ButtShotRight extends CommandGroup {
     public ButtShotRight() {
     	addParallel(new Arm(2095, .25));
         addSequential(new FollowArc(new ButtShotRightArc()));
-        addSequential(new TurnWithGyro(90, .7, .017));
+        addSequential(new TurnWithGyro(80, .7, .017));
         addSequential(new zeroPidgeotto());
         addSequential(new FollowArc(new ButtShot2Arc()));
         addSequential(new punch(1));

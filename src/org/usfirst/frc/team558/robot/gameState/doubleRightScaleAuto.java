@@ -30,7 +30,7 @@ public class doubleRightScaleAuto extends CommandGroup {
     		}
     		else {
     			
-    			addSequential(new rightExchange());
+    			addSequential(new CrossTheLine());
     			
     		}
     }

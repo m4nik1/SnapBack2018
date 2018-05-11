@@ -1,5 +1,6 @@
 package org.usfirst.frc.team558.robot.subsystems;
 
+
 import org.usfirst.frc.team558.robot.commands.Elmcitydrive;
 
 import com.ctre.phoenix.ErrorCode;
@@ -34,6 +35,7 @@ public class DriveTrain extends Subsystem {
 	public DriveTrain(){
 		
 		// DriveTrain Master
+		this.leftDriveMaster.configMotionProfileTrajectoryPeriod(0, 0);
 		this.leftDriveMaster.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Relative, 0, 0);
 		this.leftDriveSlave1.follow(leftDriveMaster);
 		this.leftDriveSlave2.follow(leftDriveMaster);
@@ -43,6 +45,7 @@ public class DriveTrain extends Subsystem {
 		
 		this.rightDriveSlave1.follow(rightDriveMaster);
 		this.rightDriveSlave2.follow(rightDriveMaster);
+		this.rightDriveMaster.configMotionProfileTrajectoryPeriod(0, 0);
 		this.rightDriveMaster.setSensorPhase(true);
 		this.rightDriveMaster.setInverted(true);
 		this.rightDriveSlave1.setInverted(true);

@@ -71,6 +71,8 @@ public class Robot extends TimedRobot {
 
 	Command Auto;
 	
+	
+	
 	@Override
 	public void robotInit() {
 		
@@ -98,7 +100,6 @@ public class Robot extends TimedRobot {
 		this.GameState = new gameState(DriverStation.getInstance().getGameSpecificMessage());
 		
 		int val = (int) digit.getPotentiometer();
-		
 		
 		switch(val) {
 			
@@ -181,6 +182,8 @@ public class Robot extends TimedRobot {
 			m_autonomousCommand.start();
 		}
 		
+		SmartDashboard.putString("GameState", DriverStation.getInstance().getGameSpecificMessage());
+		SmartDashboard.putNumber("Selected Auto", digit.getPotentiometer());
 		
 		Robot.rollerClaw.zeroAngle();
 		Robot.detent.FireDetent();
@@ -199,6 +202,7 @@ public class Robot extends TimedRobot {
 		SmartDashboard.putNumber("Left Encoder", Robot.driveTrain.readLeftEncoder() * .00460153);
 		SmartDashboard.putNumber("Right Encoder", Robot.driveTrain.readRightEncoder() * .00460153);
 		SmartDashboard.putNumber("Pidgey Angle", Robot.rollerClaw.getAngle());
+		
 		
 		this.CompressorHandler();
 	}

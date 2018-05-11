@@ -13,7 +13,7 @@ public class Elmcitydrive extends Command {
 	 private double oldWheel = 0.0;
 	  private double quickStopAccumulator;
 	  private double throttleDeadband = 0.01;
-	  private double wheelDeadband = 0.07;
+	  private double wheelDeadband = 0.09;
 
     public Elmcitydrive() {
         // Use requires() here to declare subsystem dependencies

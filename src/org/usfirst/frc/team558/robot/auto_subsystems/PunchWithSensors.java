@@ -30,7 +30,7 @@ public class PunchWithSensors extends Command {
     	if(Robot.lineSensor.readSensors()){
     		
     		Robot.punch.pushCube();
-    		Robot.rollerClaw.setMotors(-.5);
+    		Robot.rollerClaw.setMotors(-.7);
     		
     	}
     	

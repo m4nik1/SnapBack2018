@@ -30,6 +30,6 @@ public class doubleRightScaleSwitch extends CommandGroup {
 	    	addSequential(new zeroPidgeotto());
 	    	addSequential(new Arm(-3450, .1));
 	    	addSequential(new FollowArc(new doubleScaleSwitchFrontArc()));
-	    	addSequential(new rollerClaw(.5, .1));
+	    	addSequential(new rollerClaw(-.5, .1));
     }
 }
